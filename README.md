@@ -1,2 +1,2 @@
-# leaflet_new
-New leaflet repo
+# leaflet-homework
+Homework 17, Leaflet Homework
