@@ -5,8 +5,8 @@ function markerSize(magnitude){
 
 //Creating our map
 var myMap = L.map("map", {
-    center: [37.09, -95.71],
-    zoom: 5
+    center: [0,0],
+    zoom: 2
 });
 
 //Adding tile layer
