@@ -65,7 +65,8 @@ d3.json(queryUrl).then(function(data){
         }, 
         style: styleThis,
         onEachFeature: function(feature, layer){
-            layer.bindPopup(feature.properties.title)
+            layer.bindPopup(feature.properties.place + "<br> Magnitude: " +
+            feature.properties.mag + "<br> Depth: " + feature.geometry.coordinates[2])
         }
     }).addTo(earthquakeLayer);
 
@@ -86,17 +87,13 @@ d3.json(queryUrl).then(function(data){
         for (var i=0; i < labels.length; i++){
 
             ulArray.push(
-                '<p> <p style="background-color:' + labelColors[i] + '; height: 10px; width: 10px; padding 5px 5px"></p>' +
-                '<span> ' + labels[i] + '</span> </p>'
-                // `<p> 
-                // <p style="background-color:${labelColors[i]}; height: 10px; width: 10px; padding 5px 10px"></p>
-                // &nbsp; <span>${labels[i]}</span>
-                // </p>`
+                `<p style=" background-color: ${labelColors[i]};height: 10px; width: 10px; padding: 5px 5px; display: inline"> </p><p style = "display:inline; background-color: transparent"> ${labels[i]}</p><br>`
+                
             )
             
         };
 
-        div.innerHTML += "<div" + ulArray.join("") + "</div>";
+        div.innerHTML += "<div>" + ulArray.join("") + "</div>";
         return div;
 
     };
