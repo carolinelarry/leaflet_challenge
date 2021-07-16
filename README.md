@@ -1,4 +1,4 @@
-Homework 17, Leaflet Homework
+#Homework 17, Leaflet Homework
 
 In this homework, using data from earthquake.usgs.gov, I mapped earthquakes from the past seven days.
 
