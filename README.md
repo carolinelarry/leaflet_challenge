@@ -14,3 +14,7 @@ There is also a legend that shows how the color coordinates to the depth.
 
 ## Leaflet Part 2
 Part 2 is still in process.
+
+
+## Contact
+Email: cgrace1011@gmail.com
